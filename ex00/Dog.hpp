@@ -1,38 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/04 12:37:50 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/04 16:29:47 by azgaoua          ###   ########.fr       */
+/*   Created: 2024/02/04 14:09:38 by azgaoua           #+#    #+#             */
+/*   Updated: 2024/02/04 16:28:05 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef DOG_HPP
+#define DOG_HPP
 
-#ifndef ANIMAL_HPP
-#define	ANIMAL_HPP
-#include <string>
+#include "Animal.hpp"
+
 #include <iostream>
+#include <string>
 
-
-class Animal
-{
-	protected:
-		std::string		type;
+class Dog : public Animal{
 	public:
 	/*----------------------- Orthodox Canonical Form -----------------------*/
-		Animal		();
-		Animal		(Animal const & src);
-		Animal&		operator =(const Animal& b);
-		virtual ~Animal		();
+		Dog			();
+		Dog			(Dog const& src);
+		Dog& 		operator=(const Dog& b);
+		~Dog		();
 	/*-----------------------------------------------------------------------*/
 
 	/*----------------------- public member functions -----------------------*/
-		virtual void		makeSound() const;
-		virtual std::string		getType() const;
+		void		makeSound() const;
 	/*-----------------------------------------------------------------------*/
 };
+
+
 
 #endif

@@ -1,37 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/04 12:37:50 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/04 16:29:47 by azgaoua          ###   ########.fr       */
+/*   Created: 2024/02/04 16:03:25 by azgaoua           #+#    #+#             */
+/*   Updated: 2024/02/04 16:27:54 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#ifndef ANIMAL_HPP
-#define	ANIMAL_HPP
-#include <string>
+#ifndef CAT_HPP
+
+#define CAT_HPP
+#include "Animal.hpp"
 #include <iostream>
+#include <string>
 
-
-class Animal
-{
-	protected:
-		std::string		type;
+class Cat : public Animal {
 	public:
 	/*----------------------- Orthodox Canonical Form -----------------------*/
-		Animal		();
-		Animal		(Animal const & src);
-		Animal&		operator =(const Animal& b);
-		virtual ~Animal		();
+		Cat			();
+		Cat			(Cat const& src);
+		Cat& 		operator=(const Cat& b);
+		~Cat		();
 	/*-----------------------------------------------------------------------*/
 
 	/*----------------------- public member functions -----------------------*/
-		virtual void		makeSound() const;
-		virtual std::string		getType() const;
+		void		makeSound() const;
 	/*-----------------------------------------------------------------------*/
 };
 

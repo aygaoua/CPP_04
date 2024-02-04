@@ -1,42 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/04 12:36:56 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/04 16:29:44 by azgaoua          ###   ########.fr       */
+/*   Created: 2024/02/04 16:03:12 by azgaoua           #+#    #+#             */
+/*   Updated: 2024/02/04 16:27:33 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "Cat.hpp"
 
 /*------------------------- Orthodox Canonical Form -------------------------*/
-Animal::Animal() {
-	std::cout << "\"Animal\" constructor called" << std::endl;
+Cat::Cat() {
+	type = "Cat";
+	std::cout << "\"Cat\" constructor called" << std::endl;
 }
 
-Animal&		Animal::operator =(const Animal& b) {
+Cat&		Cat::operator =(const Cat& b) {
 	type = b.type;
-	std::cout << "\"Animal\" copy assignment operator called" << std::endl;
+	std::cout << "\"Dog\" copy assignment operator called" << std::endl;
 	return(*this);
 }
 
-Animal::Animal(Animal const &src) {
-	std::cout << "\"Animal\" copy constructor called" << std::endl;
+Cat::Cat(Cat const &src) {
+	std::cout << "\"Cat\" copy constructor called" << std::endl;
 	*this = src;
 }
 
-Animal::~Animal() {
-	std::cout << "\"Animal\" destructor called" << std::endl;
+Cat::~Cat() {
+	std::cout << "\"Cat\" destructor called" << std::endl;
 }
 /*---------------------------------------------------------------------------*/
- 
 
 /*----------------------- public member functions -----------------------*/
-void	Animal::makeSound() const{ /*--------- the Base class ---------*/ }
-std::string	Animal::getType() const{
-	return this->type;
+void	Cat::makeSound() const{
+	std::cout << "Meow-Meow....!!" << std::endl;
 }
 /*-----------------------------------------------------------------------*/

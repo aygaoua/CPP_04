@@ -1,42 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/04 12:36:56 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/04 16:29:44 by azgaoua          ###   ########.fr       */
+/*   Created: 2024/02/04 14:09:41 by azgaoua           #+#    #+#             */
+/*   Updated: 2024/02/04 16:28:01 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "Dog.hpp"
 
 /*------------------------- Orthodox Canonical Form -------------------------*/
-Animal::Animal() {
-	std::cout << "\"Animal\" constructor called" << std::endl;
+Dog::Dog() {
+	type = "Dog";
+	std::cout << "\"Dog\" constructor called" << std::endl;
 }
 
-Animal&		Animal::operator =(const Animal& b) {
+Dog&		Dog::operator =(const Dog& b) {
 	type = b.type;
-	std::cout << "\"Animal\" copy assignment operator called" << std::endl;
+	std::cout << "\"Dog\" copy assignment operator called" << std::endl;
 	return(*this);
 }
 
-Animal::Animal(Animal const &src) {
-	std::cout << "\"Animal\" copy constructor called" << std::endl;
+Dog::Dog(Dog const &src) {
+	std::cout << "\"Dog\" copy constructor called" << std::endl;
 	*this = src;
 }
 
-Animal::~Animal() {
-	std::cout << "\"Animal\" destructor called" << std::endl;
+Dog::~Dog() {
+	std::cout << "\"Dog\" destructor called" << std::endl;
 }
 /*---------------------------------------------------------------------------*/
- 
 
 /*----------------------- public member functions -----------------------*/
-void	Animal::makeSound() const{ /*--------- the Base class ---------*/ }
-std::string	Animal::getType() const{
-	return this->type;
+void	Dog::makeSound() const{
+	std::cout << "Hoaw-Hoaw....!!" << std::endl;
 }
 /*-----------------------------------------------------------------------*/
