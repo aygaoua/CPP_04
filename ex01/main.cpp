@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 11:42:16 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/05 16:24:08 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/05 18:53:54 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,23 @@
 #include "WrongCat.hpp"
 #include "Animal.hpp"
 #include "WrongAnimal.hpp"
+
+void vv() {
+	std::system("leaks ex01");
+}
+
+// int main()
+// {
+// 	const Animal* j = new Dog();
+// 	const Animal* i = new Cat();
+
+// 	delete j;//should not create a leak
+// 	delete i;
+
+// 	// atexit(vv);
+// 	return 0;
+// }
+
 
 int main()
 {
@@ -33,6 +50,6 @@ int main()
 	delete meta;
 	delete j;
 	delete i;
-	
+	atexit(vv);
 return 0;
 }
