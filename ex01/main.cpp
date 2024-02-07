@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 11:42:16 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/07 16:02:03 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/07 16:07:56 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,6 @@
 #include "WrongCat.hpp"
 #include "Animal.hpp"
 #include "WrongAnimal.hpp"
-
-void vv() {
-	std::system("leaks run_ex01");
-}
 
 int main()
 {
