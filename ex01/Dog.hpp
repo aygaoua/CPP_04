@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 14:09:38 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/06 21:42:14 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/07 05:54:30 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Dog : public Animal{
 	public:
 	/*----------------------- Orthodox Canonical Form -----------------------*/
 		Dog			();
-		Dog			(Dog const& src);
+		Dog			(const Dog & src);
 		Dog& 		operator=(const Dog& b);
 		~Dog		();
 	/*-----------------------------------------------------------------------*/

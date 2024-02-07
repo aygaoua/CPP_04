@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 16:03:12 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/06 21:40:48 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/07 05:22:11 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,6 @@ Cat::Cat() {
 	CatBrain = new Brain();
 	type = "Cat";
 	std::cout << "\"Cat\" constructor called" << std::endl;
-	std::string tab[10] = {
-		"",
-		"tuna...!",
-		"fish...!",
-		"",
-		"rat...!",
-		"sleep...!",
-		"",
-		"play...!",
-		"make sound...!",
-		""
-	};
-	for (unsigned int  i = 0; i < 100; i++)
-		CatBrain->ideas[i] = tab[rand() % 10];
 }
 
 Cat&		Cat::operator =(const Cat& b) {

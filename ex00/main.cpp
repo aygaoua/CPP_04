@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 11:42:16 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/05 16:24:08 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/07 05:37:48 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,10 @@ int main()
 	const Animal* meta = new Animal();
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
+
+	const WrongCat* wrongmeta = new WrongCat();
+	wrongmeta->makeSound();
+
 	std::cout << "<<------------------------- start ------------------------->>" << std::endl;
 	
 	std::cout << j->getType() << " " << std::endl;
