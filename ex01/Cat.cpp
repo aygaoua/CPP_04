@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 16:03:12 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/07 16:03:16 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/07 16:20:45 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ Cat&		Cat::operator =(const Cat& b) {
 }
 
 Cat::Cat(Cat const &src) {
+	CatBrain = NULL;
 	std::cout << "\"Cat\" copy constructor called" << std::endl;
 	*this = src;
 }
