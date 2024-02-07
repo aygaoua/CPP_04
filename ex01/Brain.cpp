@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/05 16:27:38 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/06 15:07:46 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/06 20:50:20 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,9 @@ Brain::Brain() {
 }
 
 Brain&		Brain::operator =(const Brain& b) {
-	*ideas = *b.ideas;
 	std::cout << "\"Brain\" copy assignment operator called" << std::endl;
+	for (int i = 0; i < 100; i++)
+		ideas[i] = b.ideas[i];
 	return(*this);
 }
 

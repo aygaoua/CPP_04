@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 12:37:50 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/06 15:36:30 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/06 21:41:12 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #define	ANIMAL_HPP
 #include <string>
 #include <iostream>
+#include "Brain.hpp"
 
 
 class Animal
