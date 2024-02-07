@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 14:09:41 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/07 02:22:06 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/07 16:19:48 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,14 @@ Dog::Dog() {
 
 Dog&		Dog::operator =(const Dog& b) {
 	type = b.type;
+	delete DogBrain;
 	DogBrain = new Brain(*b.DogBrain);
 	std::cout << "\"Dog\" copy assignment operator called" << std::endl;
 	return(*this);
 }
 
 Dog::Dog(Dog const &src) {
+	DogBrain = NULL;
 	std::cout << "\"Dog\" copy constructor called" << std::endl;
 	*this = src;
 }
@@ -40,9 +42,5 @@ Dog::~Dog() {
 /*----------------------- public member functions -----------------------*/
 void	Dog::makeSound() const{
 	std::cout << "Hoaw-Hoaw....!!" << std::endl;
-}
-
-Brain*	Dog::getBrain() {
-	return(DogBrain);
 }
 /*-----------------------------------------------------------------------*/

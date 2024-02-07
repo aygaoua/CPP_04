@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 11:42:16 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/07 05:19:13 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/07 16:24:55 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,24 +16,19 @@
 #include "Animal.hpp"
 #include "WrongAnimal.hpp"
 
-void vv() {
-	std::system("leaks run_ex01");
-}
-
 int main()
 {
-	// const Animal* meta = new Animal(); /* |--------> error: cannot declare variable ‘meta’ to be of abstract type ‘Animal’ */
+	// const Animal* meta = new Animal(); /* |--------> error */
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
 	std::cout << "<<------------------------- start (ex01) ------------------------->>" << std::endl;
 	
-	/* atexit(vv); */
 	std::cout << j->getType() << " " << std::endl;
 	std::cout << i->getType() << " " << std::endl;
 	i->makeSound(); /* will output the cat sound! */
 	j->makeSound();
 	/* meta->makeSound(); */
-	
+	std::cout << "<<------------------------ tab of objects ------------------------>>" << std::endl;
 	Animal* a[4];
 	for (int i = 0; i < 2; i++)
 		a[i] = new Cat();
@@ -43,13 +38,9 @@ int main()
 		std::cout << a[i]->getType() << " " << std::endl;
 	for (int i = 0; i < 4; i++)
 		a[i]->makeSound();
+	std::cout << "<<------------------------ END ------------------------>>" << std::endl;
 	for (int i = 0; i < 4; i++)
 		delete a[i];
-	std::cout << "<<------------------------- test deep copy ------------------------->>" << std::endl;
-	Dog basic;
-	{
-		Dog tmp = basic;
-	}
 	/* delete meta; */
 	delete j;
 	delete i;
