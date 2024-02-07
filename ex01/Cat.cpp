@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 16:03:12 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/07 05:43:06 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/07 16:03:16 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ Cat::Cat() {
 
 Cat&		Cat::operator =(const Cat& b) {
 	type = b.type;
+	delete CatBrain;
 	CatBrain = new Brain(*b.CatBrain);
 	std::cout << "\"Cat\" copy assignment operator called" << std::endl;
 	return(*this);
@@ -40,9 +41,5 @@ Cat::~Cat() {
 /*----------------------- public member functions -----------------------*/
 void	Cat::makeSound() const{
 	std::cout << "Meow-Meow....!!" << std::endl;
-}
-
-Brain*	Cat::getBrain() {
-	return(CatBrain);
 }
 /*-----------------------------------------------------------------------*/
