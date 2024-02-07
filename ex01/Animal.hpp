@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 12:37:50 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/07 15:47:20 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/07 16:38:12 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ class Animal
 
 	/*----------------------- public member functions -----------------------*/
 		virtual void		makeSound() const;
-		std::string		getType() const;
+		std::string			getType() const;
 	/*-----------------------------------------------------------------------*/
 };
 

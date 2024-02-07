@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 12:36:56 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/07 15:15:28 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/07 16:35:11 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,6 @@ void	Animal::makeSound() const{
 }
 
 std::string	Animal::getType() const{
-	return this->type;
+	return type;
 }
 /*-----------------------------------------------------------------------*/

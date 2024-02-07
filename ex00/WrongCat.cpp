@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/05 15:48:46 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/05 16:10:05 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/07 16:36:37 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,6 @@ WrongCat::~WrongCat() {
 
 /*----------------------- public member functions -----------------------*/
 void	WrongCat::makeSound() const{
-	std::cout << "Meow-Meow....!!" << std::endl;
+	std::cout << "<WRONG>Meow-Meow....!!" << std::endl;
 }
 /*-----------------------------------------------------------------------*/

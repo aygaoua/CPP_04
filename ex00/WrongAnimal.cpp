@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/05 15:48:34 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/07 15:13:11 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/07 16:36:51 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,6 @@ void	WrongAnimal::makeSound() const {
 	std::cout << "WrongAnimal making sound!!" << std::endl;
  }
 std::string	WrongAnimal::getType() const{
-	return this->type;
+	return type;
 }
 /*-----------------------------------------------------------------------*/
