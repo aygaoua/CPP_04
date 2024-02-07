@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 12:36:56 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/05 16:22:09 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/07 15:15:28 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 /*------------------------- Orthodox Canonical Form -------------------------*/
 Animal::Animal() {
+	type = "Animal";
 	std::cout << "\"Animal\" constructor called" << std::endl;
 }
 
@@ -38,6 +39,7 @@ Animal::~Animal() {
 void	Animal::makeSound() const{ 
 	std::cout << "Animal making sound!!" << std::endl;
 }
+
 std::string	Animal::getType() const{
 	return this->type;
 }

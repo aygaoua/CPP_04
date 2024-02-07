@@ -6,7 +6,7 @@
 /*   By: azgaoua <azgaoua@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/05 15:48:34 by azgaoua           #+#    #+#             */
-/*   Updated: 2024/02/05 16:18:13 by azgaoua          ###   ########.fr       */
+/*   Updated: 2024/02/07 15:13:11 by azgaoua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 /*------------------------- Orthodox Canonical Form -------------------------*/
 WrongAnimal::WrongAnimal() {
+	type = "WrongAnimal";
 	std::cout << "\"WrongAnimal\" constructor called" << std::endl;
 }
 
